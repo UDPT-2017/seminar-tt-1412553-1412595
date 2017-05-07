@@ -1,5 +1,7 @@
 var gulp = require('gulp');
-
+var browserSync = require('browser-sync');
+var reload = browserSync.reload;
+var htmlmin = require('gulp-minify-html');
 var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
@@ -9,6 +11,30 @@ var uglifyjs = require('uglify-js');
 var minifier = require('gulp-uglify/minifier');
 var pump = require('pump');
 var imagemin = require('gulp-imagemin');
+gulp.task('default', function()
+{
+
+});
+gulp.task('server', function()
+{
+  browserSync({
+    notify: false,
+    server: {
+      baseDir: './app'
+    }
+  })
+  gulp.watch(['app/*.html'], reload);
+  gulp.watch(['app/*.css'], reload);
+  gulp.watch(['app/*.js'], reload);
+  gulp.watch(['app/*.scss'], reload);
+});
+gulp.task('html', function()
+{
+   gulp.src('app/**/*.html')
+   .pipe(concat('MinifyHTML.html'))
+   .pipe(htmlmin())
+   .pipe(gulp.dest('dist/html'));
+});
 
 
 gulp.task('js', function (cb) {
