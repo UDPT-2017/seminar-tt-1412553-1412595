@@ -1,5 +1,9 @@
 var gulp = require('gulp');
 var cssnano = require('gulp-cssnano');
+var concat = require('gulp-concat');
+var rename = require('gulp-rename');
+var uglify = require('gulp-uglify');
+var sass = require('gulp-sass');
 gulp.task('default', function()
 {
 
