@@ -10,6 +10,7 @@ var htmlmin = require('gulp-minify-html');
 var uglifyjs = require('uglify-js');
 var minifier = require('gulp-uglify/minifier');
 var pump = require('pump');
+var imagemin = require('gulp-imagemin');
 gulp.task('default', function()
 {
 
@@ -61,6 +62,19 @@ gulp.task('sass', function()
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('dist/sass'));
 });
+
+gulp.task('imagemin', () =>
+  gulp.src('app/img/*')
+    .pipe(imagemin([
+      imagemin.gifsicle({interlaced: true}),
+      imagemin.jpegtran({progressive: true}),
+      imagemin.optipng({optimizationLevel: 5}),
+      imagemin.svgo({plugins: [{removeViewBox: true}]})
+    ]))
+    .pipe(gulp.dest('dist/images'))
+);
+
+
 gulp.task('minify', ['html','css', 'js','sass'], function()
 {
 
