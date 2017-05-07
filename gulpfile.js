@@ -1,11 +1,13 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
-var cssnano = require('gulp-cssnano');
+var htmlmin = require('gulp-minify-tml');
 var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
 var sass = require('gulp-sass');
+var cssnano = require('gulp-cssnano');
+var htmlmin = require('gulp-minify-html');
 var uglifyjs = require('uglify-js');
 var minifier = require('gulp-uglify/minifier');
 var pump = require('pump');
@@ -35,7 +37,6 @@ gulp.task('html', function()
 });
 
 gulp.task('js', function (cb) {
-  // the same options as described above 
   var options = {
     preserveComments: 'license'
   };
@@ -61,7 +62,7 @@ gulp.task('sass', function()
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('dist/sass'));
 });
-gulp.task('minify', ['css', 'js','sass'], function()
+gulp.task('minify', ['html','css', 'js','sass'], function()
 {
 
 });
