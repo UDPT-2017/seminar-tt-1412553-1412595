@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/UDPT-2017/seminar-tt-1412553-1412595#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2"
   }
 }
