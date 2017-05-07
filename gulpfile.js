@@ -1,5 +1,9 @@
 var gulp = require('gulp');
 var cssnano = require('gulp-cssnano');
+gulp.task('default', function()
+{
+
+});
 gulp.task('css', function()
 {
 	gulp.src('app/css/*.css')
