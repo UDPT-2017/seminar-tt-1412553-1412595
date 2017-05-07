@@ -1,4 +1,6 @@
 var gulp = require('gulp');
+var browserSync = require('browser-sync');
+var reload = browserSync.reload;
 var cssnano = require('gulp-cssnano');
 var concat = require('gulp-concat');
 var rename = require('gulp-rename');
@@ -11,6 +13,27 @@ gulp.task('default', function()
 {
 
 });
+gulp.task('server', function()
+{
+  browserSync({
+    notify: false,
+    server: {
+      baseDir: './app'
+    }
+  })
+  gulp.watch(['app/*.html'], reload);
+  gulp.watch(['app/*.css'], reload);
+  gulp.watch(['app/*.js'], reload);
+  gulp.watch(['app/*.scss'], reload);
+});
+gulp.task('html', function()
+{
+   gulp.src('app/**/*.html')
+   .pipe(concat('MinifyHTML.html'))
+   .pipe(htmlmin())
+   .pipe(gulp.dest('dist/html'));
+});
+
 gulp.task('js', function (cb) {
   // the same options as described above 
   var options = {
