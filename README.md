@@ -24,13 +24,13 @@ Yêu cầu **bắt buộc**
 * [ ] Tạo github page để viết lại báo cáo cho nội dung đề tài tìm hiểu
 
 Các **nội dung lý thuyết** dự định tìm hiểu. Nhóm liệt kê các nội dung đã làm được vào bên dưới và check vào các nội dung đã tìm hiểu được.
-* [x] Minify: css, html, js
+* [x] Minify: css, html, js, image
 * [x] Auto Refresh server
 * [x] Viết sass chuyển sang css
 
 
 Các **chức năng của demo** đã thực hiện hoặc dự kiến thực hiện. Nhóm check vào các chức năng đã làm
-* [x] Minify:css, js, html
+* [x] Minify:css, js, html, image
 * [x] Auto Refresh server
 * [x] Chuyển sass sang css
 
