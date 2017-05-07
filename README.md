@@ -19,13 +19,14 @@ Yêu cầu **GIT**
 * [ ] Sử dụng GIT theo Gitflow Workflow.
 
 Yêu cầu **bắt buộc**
-* [ ] Source code demo
-* [ ] Slide thuyết trình
+* [x] Source code demo
+* [x] Slide thuyết trình
 * [ ] Tạo github page để viết lại báo cáo cho nội dung đề tài tìm hiểu
 
 Các **nội dung lý thuyết** dự định tìm hiểu. Nhóm liệt kê các nội dung đã làm được vào bên dưới và check vào các nội dung đã tìm hiểu được.
-* [ ] Nội dung 1
-* [ ] Nội dung 2
+* [ ] Minify: css, html, js
+* [ ] Auto Refresh server
+* [ ]
 
 Các **chức năng của demo** đã thực hiện hoặc dự kiến thực hiện. Nhóm check vào các chức năng đã làm
 * [ ] Chức năng 1

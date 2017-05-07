@@ -1,7 +1,7 @@
 {
   "name": "1412553_1412595",
   "version": "1.0.0",
-  "description": "**Tên đề tài** là một repository trong đề tài tìm hiểu của lớp Ứng dụng phân tán.",
+  "description": "**Gulp** là một repository trong đề tài tìm hiểu của lớp Ứng dụng phân tán.",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
