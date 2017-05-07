@@ -4,7 +4,7 @@
 
 Thành viên:
 * [ ] **1412553** Tên sinh viên 1 (tên tài khoản tqhb1995)
-* [ ] **MSSV2** Tên sinh viên 2 (tên tài khoản github)
+* [ ] **1412595** Tên sinh viên 2 (tên tài khoản github)
 
 URL: **Link github page**
 
