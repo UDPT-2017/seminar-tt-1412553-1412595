@@ -30,14 +30,15 @@ Các **nội dung lý thuyết** dự định tìm hiểu. Nhóm liệt kê các
 
 
 Các **chức năng của demo** đã thực hiện hoặc dự kiến thực hiện. Nhóm check vào các chức năng đã làm
-* [x] Minify
+* [x] Minify:css, js, html
 * [x] Auto Refresh server
+* [x] Chuyển sass sang css
 
 ## Demo
 
 Link ảnh GIF demo ứng dụng:
 
-![Video Walkthrough](demo.gif)
+http://imgur.com/pC70Osz
 
 Tạo ảnh GIF với chương trình [LiceCap](http://www.cockos.com/licecap/).
 
