@@ -32,7 +32,13 @@ gulp.task('css', function()
 	.pipe(cssnano())
 	.pipe(gulp.dest('dist/css'));
 });
-gulp.task('minify', ['css', 'js'], function()
+gulp.task('sass', function()
+{  
+    gulp.src('app/sass/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('dist/sass'));
+});
+gulp.task('minify', ['css', 'js','sass'], function()
 {
 
 });
